@@ -1080,7 +1080,6 @@ const defaultRoutes: { [routeName: string]: Route } = {
     sidebar: null,
     useClusterURL: false,
     noAuthRequired: true,
-    disabled: !isElectron(),
     component: () => <KubeConfigLoader />,
   },
   addCluster: {
@@ -1093,7 +1092,6 @@ const defaultRoutes: { [routeName: string]: Route } = {
     },
     useClusterURL: false,
     noAuthRequired: true,
-    disabled: !isElectron(),
     component: () => <AddCluster open onChoice={() => {}} />,
   },
   map: {
