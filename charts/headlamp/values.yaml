@@ -34,6 +34,7 @@ extraContainers: []
 config:
   inCluster: true
   inClusterContextName: "main"
+  dynamicClusters: true
   # -- base url path at which headlamp should run
   baseURL: ""
   # -- session token TTL in seconds (default is 24 hours)
